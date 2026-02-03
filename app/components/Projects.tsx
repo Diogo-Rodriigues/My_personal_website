@@ -7,7 +7,7 @@ import Link from "next/link"
 
 const projectCategories = [
   {
-    name: "Web Development",
+    name: "Software Engineering",
     projects: [
       {
         title: "Eletronics store  | React - Python - SQLite",
