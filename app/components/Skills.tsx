@@ -7,27 +7,27 @@ const skillCategories = [
   {
     name: "Programming",
     icon: "💻",
-    skills: ["Python", "C/C++", "C#", "Haskell", "Bash Script", "HTML/CSS", "JavaScript/TypeScript", "SQL"],
+    skills: ["Python", "C/C++", "C#", "Java", "Haskell", "Bash Script", "HTML/CSS", "JavaScript/TypeScript", "SQL"],
   },
   {
     name: "Frameworks",
     icon: "🛠️",
-    skills: ["React", "Node.js", ".NET", "Django", "Flask", "FastAPI", "CUDA", "Numpy", "Scipy", "Matplotlib", "Pandas", "Scikit-learn", "TensorFlow", "PyTorch", "TailwindCSS"],
+    skills: ["React", "Node.js", ".NET", "Django", "Flask", "FastAPI", "CUDA", "Spade", "Numpy", "Scipy", "Matplotlib", "Pandas", "Scikit-learn", "Seaborn", "TensorFlow", "PyTorch", "TailwindCSS"],
   },
   {
     name: "Tools",
     icon: "🔧",
-    skills: ["Git", "Docker", "Linux", "Bash", "MatLab", "TCPDump", "Wireshark", "TINA-TI", "Tanner-Tools", "COMSOL Multiphysics"],
+    skills: ["Git", "Docker", "Kubernetes", "Linux", "Bash", "Nginx", "RabbitMQ", "Ansible", "Vagrant", "GCP", "MatLab", "TCPDump", "Wireshark"],
   },
   {
     name: "Databases",
     icon: "🗄️",
-    skills: ["PostgreSQL", "MongoDB", "MySQL", "SQLite",],
+    skills: ["PostgreSQL", "MongoDB", "MinIO", "MySQL", "SQLite",],
   },
   {
     name: "Concepts",
     icon: "🧠",
-    skills: ["Machine Learning", "Cryptography", "Penetration test", "Computer Networks", "Software Development (Full-Stack)", "Data Structures and Algorithms", "Parallel Computing", "Instrumentation (Analog and digital circuits)", "Control Theory", "Signal processing", "Embedded systems and Microcontrollers"],
+    skills: ["Cryptography", "Penetration test", "Computer Systems Security", "Machine Learning", "Deep Learning", "Multi-agent Systems", "Computer Networks", "Over-the-Top (OTT) content delivery", "Cloud Deployment", "Virtualization", "Software Development (Full-Stack)", "Data Structures and Algorithms", "Parallel Computing"]
   },
   {
     name: "Soft skills",
@@ -38,9 +38,8 @@ const skillCategories = [
 
 const SkillCategory = ({ category, isSelected, onHover }) => (
   <motion.div
-    className={`cursor-pointer p-4 rounded-lg transition-colors duration-300 ${
-      isSelected ? "border-2 border-blue-500" : "border-2 border-transparent hover:border-blue-500"
-    }`}
+    className={`cursor-pointer p-4 rounded-lg transition-colors duration-300 ${isSelected ? "border-2 border-blue-500" : "border-2 border-transparent hover:border-blue-500"
+      }`}
     onHoverStart={onHover}
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
