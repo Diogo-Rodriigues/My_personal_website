@@ -17,7 +17,7 @@ const Hero = () => {
         <div className="flex justify-center space-x-8 mb-12">
           <div className="flex flex-col items-center">
             <Code className="w-12 h-12 text-green-400 mb-2" />
-            <span className="text-green-400">Software Dev</span>
+            <span className="text-green-400">Software Engineering</span>
           </div>
           <div className="flex flex-col items-center">
             <Shield className="w-12 h-12 text-purple-400 mb-2" />
