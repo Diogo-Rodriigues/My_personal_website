@@ -1,4 +1,4 @@
-import { ArrowDown, Code, Shield, Cpu, Brain, Server } from "lucide-react"
+import { ArrowDown, Code, Shield, Cloud, Brain, Server } from "lucide-react"
 
 const Hero = () => {
   return (
@@ -28,8 +28,8 @@ const Hero = () => {
             <span className="text-red-400">AI & ML</span>
           </div>
           <div className="flex flex-col items-center">
-            <Cpu className="w-12 h-12 text-yellow-400 mb-2" />
-            <span className="text-yellow-400">Electronics</span>
+            <Cloud className="w-12 h-12 text-yellow-400 mb-2" />
+            <span className="text-yellow-400">DevOps/Cloud</span>
           </div>
           <div className="flex flex-col items-center">
             <Server className="w-12 h-12 text-blue-400 mb-2" />
