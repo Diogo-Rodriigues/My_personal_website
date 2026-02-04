@@ -12,7 +12,7 @@ const Hero = () => {
           Diogo Rodrigues Portfolio
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-gray-300">
-          Cybersecurity enthusiast with a separate interest in artificial intelligence and intelligent systems.
+          Cybersecurity enthusiast with a separate interest in intelligent systems.
         </p>
         <div className="flex justify-center space-x-8 mb-12">
           <div className="flex flex-col items-center">
