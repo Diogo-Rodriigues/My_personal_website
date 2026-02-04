@@ -19,21 +19,6 @@ const skillCategories = [
     icon: "🔧",
     skills: ["Git", "Docker", "Kubernetes", "Linux", "Bash", "Nginx", "RabbitMQ", "Ansible", "Vagrant", "GCP", "MatLab", "TCPDump", "Wireshark"],
   },
-  {
-    name: "Databases",
-    icon: "🗄️",
-    skills: ["PostgreSQL", "MongoDB", "MinIO", "MySQL", "SQLite",],
-  },
-  {
-    name: "Concepts",
-    icon: "🧠",
-    skills: ["Cryptography", "Penetration test", "Computer Systems Security", "Machine Learning", "Deep Learning", "Multi-agent Systems", "Computer Networks", "Over-the-Top (OTT) content delivery", "Cloud Deployment", "Virtualization", "Software Development (Full-Stack)", "Data Structures and Algorithms", "Parallel Computing"]
-  },
-  {
-    name: "Soft skills",
-    icon: "🙋‍♂️",
-    skills: ["Fluent in Portuguese and English", "Determined", "Ambitious", "Organized", "Inquisitive", "humble", "self-taught/quick learner"],
-  },
 ]
 
 const SkillCategory = ({ category, isSelected, onHover }) => (
