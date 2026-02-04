@@ -28,12 +28,12 @@ const Hero = () => {
             <span className="text-red-400">AI & ML</span>
           </div>
           <div className="flex flex-col items-center">
-            <Server className="w-12 h-12 text-blue-400 mb-2" />
-            <span className="text-blue-400">HPC</span>
-          </div>
-          <div className="flex flex-col items-center">
             <Cpu className="w-12 h-12 text-yellow-400 mb-2" />
             <span className="text-yellow-400">Electronics</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <Server className="w-12 h-12 text-blue-400 mb-2" />
+            <span className="text-blue-400">HPC</span>
           </div>
         </div>
         <a
