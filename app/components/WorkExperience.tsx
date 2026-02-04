@@ -20,11 +20,25 @@ const experiences: ExperienceItem[] = [
       "Waiting for future opportunities...",
   },
   {
-    date: "2025 - Present",
+    date: "July 2025 - September 2025",
+    title: "Security Researcher",
+    company: "Checkmarx",
+    description:
+      "I completed a summer internship at Checkmarx, where I worked on application security by analysing vulnerabilities, validating patches, and improving internal security tools.",
+  },
+  {
+    date: "February 2025 - December 2025",
     title: "Machine learning R&D",
     company: "LIP",
     description:
       "Recently I had the opportunity to join a LIP project in partnership with DGT for classifying very high spatial resolution images of mainland Portugal using machine learning techniques.",
+  },
+  {
+    date: "October 2024 - Present",
+    title: "Member",
+    company: "wUMrm — University Cybersecurity & CTF Team",
+    description:
+      "I’m an active member of the University Cybersecurity & CTF Team, where I practice offensive security through vulnerability discovery, exploitation, and security research.",
   },
   {
     date: "2022 - Present",
@@ -51,9 +65,8 @@ const ExperienceCard: React.FC<{ item: ExperienceItem; index: number }> = ({ ite
       initial={{ opacity: 0.5, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
-      className={`flex flex-col md:flex-row items-center gap-8 relative ${
-        index % 2 === 0 ? "md:flex-row-reverse" : ""
-      }`}
+      className={`flex flex-col md:flex-row items-center gap-8 relative ${index % 2 === 0 ? "md:flex-row-reverse" : ""
+        }`}
     >
       <motion.div
         className="absolute left-0 md:left-1/2 top-0 bottom-0 w-1 bg-blue-500"
