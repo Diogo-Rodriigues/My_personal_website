@@ -7,11 +7,60 @@ import { ArrowLeft } from "lucide-react"
 
 const projects = [
   {
+    title: "SeedLabs Resolution  | C - Python - Bash",
+    description: "My solutions, environment setups, and detailed technical reports for the SEED Labs project.",
+    image: "/Images/seedlabs.png?height=300&width=400",
+    slug: "seedlabs",
+    category: "Cybersecurity",
+  },
+  {
+    title: "ML-Kaggle 1st Place  | Python",
+    description: "This project tackles a Kaggle Machine Learning competition aimed at forecasting urban traffic congestion in Porto using advanced ensemble learning techniques and extensive feature engineering.",
+    image: "/Images/ml-kaggle1.png?height=300&width=400",
+    slug: "ml-kaggle1",
+    category: "AI Systems",
+  },
+  {
+    title: "PictuRAS Image Processing Platform  | Next.js - React - MongoDB - RabbitMQ - Microservices",
+    description: "This project simulates real-world software evolution by analyzing and extending a cloud-based system, focusing on structured requirements engineering , UML modeling , and architectural implementation to improve scalability and maintainability through a three-phase engineering process.",
+    image: "/Images/picturas.png?height=300&width=400",
+    slug: "picturas",
+    category: "Software Engineering",
+  },
+  {
+    title: "AirTrail - DevOps  | Ansible - Docker - Kubernetes - GCP",
+    description: "A Zero-touch DevOps solution for AirTrail. Automates GKE cluster provisioning, app deployment with HPA, and Google Cloud Monitoring using Ansible playbooks.",
+    image: "/Images/airtrail.png?height=300&width=400",
+    slug: "airtrail",
+    category: "DevOps",
+  },
+  {
+    title: "OTT Multimedia Delivery Service  | Java - CORE",
+    description: "A robust Over-the-Top (OTT) delivery service that creates an Application Layer Overlay Network. Features include latency-based dynamic routing, efficient application-layer multicast, and real-time video streaming using RTP over UDP.",
+    image: "/Images/ott.png?height=300&width=400",
+    slug: "ott",
+    category: "Software Engineering",
+  },
+  {
+    title: "CTF Write-ups",
+    description: "Here are write-ups of some CTFs (Capture the flag) I have conducted where I learned about web vulnerabilities, cryptography and general cybersecurity skills.",
+    image: "/Images/CTF.png?height=300&width=400",
+    slug: "CTF",
+    category: "Cybersecurity",
+  },
+  {
     title: "Eletronics store  | React - Python - SQLite",
     description: "This is a full-stack e-commerce application built using React for the frontend and Django for the backend.",
     image: "/Images/Eletronic_Store.png?height=300&width=400",
     slug: "e-commerce-platform",
-    category: "Web Development",
+    category: "Software Engineering",
+  },
+  {
+    title: "Theme Park Multi-Agent System  | Python",
+    description: "A Multi-Agent System (MAS) simulating a theme park environment with intelligent visitors, attractions, and management agents using Python and SPADE.",
+    image: "/Images/asma.png?height=300&width=400",
+    slug: "asma",
+    category: "AI Systems",
   },
   {
     title: "My website  | React",
@@ -21,27 +70,6 @@ const projects = [
     category: "Web Development",
   },
   {
-    title: "StockSphere | React - C# - PostgreSQL",
-    description: "Modern web application that provides users with comprehensive financial information, stock market data, comments on shares, and portfolio management capabilities.",
-    image: "/Images/StockSphere.png?height=300&width=400",
-    slug: "financial-social-media",
-    category: "Web Development"
-  },
-  {
-    title: "Library Management System | C++",
-    description: "This is a comprehensive C++ application designed for managing a library's collection of books and members",
-    image: "/Images/Library_manager.png?height=300&width=400",
-    slug: "library-management",
-    category: "Software Development",
-  },
-  {
-    title: "How I learned SQL queries | SQL",
-    description: "This was the project I did when I first learned SQL, despite being a simple project it was very useful for me to learn at the beginning.",
-    image: "/Images/SQL_queries.png?height=300&width=400",
-    slug: "SQL-queries",
-    category: "Databases",
-  },
-  {
     title: "Optimization of a fluid dynamics simulation in 3D | C++ - CUDA",
     description: "This project was divided into 3 types of optimizations (sequential optimizations, multithreading optimizations with OpenMP and GPU implementation), where we achieved a runtime improvement of 122 times faster than the original version.",
     image: "/Images/HPC.png?height=300&width=400",
@@ -49,11 +77,25 @@ const projects = [
     category: "High Performance Computing (Cuda)",
   },
   {
-    title: "CTF Write-ups",
-    description: "Here are write-ups of some CTFs (Capture the flag) I have conducted where I learned about web vulnerabilities, cryptography and general cybersecurity skills.",
-    image: "/Images/CTF.png?height=300&width=400",
-    slug: "CTF",
-    category: "Cybersecurity",
+    title: "StockSphere | React - C# - PostgreSQL",
+    description: "Modern web application that provides users with comprehensive financial information, stock market data, comments on shares, and portfolio management capabilities.",
+    image: "/Images/StockSphere.png?height=300&width=400",
+    slug: "financial-social-media",
+    category: "Software Engineering"
+  },
+  {
+    title: "Library Management System | C++",
+    description: "This is a comprehensive C++ application designed for managing a library's collection of books and members",
+    image: "/Images/Library_manager.png?height=300&width=400",
+    slug: "library-management",
+    category: "Software Engineering",
+  },
+  {
+    title: "How I learned SQL queries | SQL",
+    description: "This was the project I did when I first learned SQL, despite being a simple project it was very useful for me to learn at the beginning.",
+    image: "/Images/SQL_queries.png?height=300&width=400",
+    slug: "SQL-queries",
+    category: "Databases",
   },
   {
     title: "Network traffic analysis with TCPDump",
@@ -68,27 +110,6 @@ const projects = [
     image: "/Images/Wireshark.png?height=300&width=400",
     slug: "network-scanning-wireshark",
     category: "Cybersecurity",
-  },
-  {
-    title: "Manchester Based Master-Slave Bus Interface",
-    description: "This project implements a Master-Slave communication system using Manchester encoding for data transmission. The system ensures synchronized communication, correct addressing of sensors, and error detection mechanisms to maintain data integrity.",
-    image: "/Images/Bus-Interface.png?height=300&width=400",
-    slug: "Master-Slave-Interface",
-    category: "Eletronics",
-  },
-  {
-    title: "Instrumentation Amplifier for measuring biopotentials generated by human body",
-    description: "This practical work aims to study the acquisition and amplification of differential signals using an instrumentation amplifier. The focus is on measuring biopotentials generated by the human body, such as EMG (electromyogram), EOG (electro-oculogram), EEG (electroencephalogram) and ECG (electrocardiogram).",
-    image: "/Images/Instrumentation-Amplifier.png?height=300&width=400",
-    slug: "Instrumentation-Amplifier",
-    category: "Eletronics",
-  },
-  {
-    title: "The RLC circuit as a frequency filter series and parallel",
-    description: "This work aimed to analyze the behavior of RLC circuits, in resonance, both in series and in parallel.",
-    image: "/Images/RLC.png?height=300&width=400",
-    slug: "RLC-circuit",
-    category: "Eletronics",
   },
 ]
 

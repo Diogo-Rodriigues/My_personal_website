@@ -1,9 +1,54 @@
 import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft , Github} from "lucide-react"
+import { ArrowLeft, Github } from "lucide-react"
 
 const projects = [
+  {
+    slug: "ml-kaggle1",
+    title: "ML-Kaggle 1st Place  | Python",
+    description: "This project tackles a Kaggle Machine Learning competition aimed at forecasting urban traffic congestion in Porto using advanced ensemble learning techniques and extensive feature engineering.",
+    image: "/Images/ml-kaggle1.png?height=600&width=800",
+    details:
+      "This project aims to solve a Kaggle competition challenge: predicting road traffic congestion levels in the city of Porto using historical data. Following the CRISP-DM methodology, the project involves extensive data preprocessing, feature engineering, and the implementation of advanced ensemble machine learning models.",
+    github: "https://github.com/Diogo-Rodriigues/ML-Kaggle1",
+  },
+  {
+    slug: "seedlabs",
+    title: "SeedLabs Resolution  | C - Python - Bash",
+    description: "My solutions, environment setups, and detailed technical reports for the SEED Labs project.",
+    image: "/Images/seedlabs.png?height=600&width=800",
+    details:
+      "This project was developed as part of the Computer Systems Security course at the University of Minho (2025/2026). The goal is to explore fundamental security vulnerabilities, understand how they work at a low level, and implement both exploitation and mitigation strategies in controlled environments.",
+    github: "https://github.com/Diogo-Rodriigues/Seed-Labs",
+  },
+  {
+    slug: "picturas",
+    title: "PictuRAS Image Processing Platform  | Next.js - React - MongoDB - RabbitMQ - Microservices",
+    description: "This project simulates real-world software evolution by analyzing and extending a cloud-based system, focusing on structured requirements engineering , UML modeling , and architectural implementation to improve scalability and maintainability through a three-phase engineering process.",
+    image: "/Images/picturas.png?height=600&width=800",
+    details:
+      "The PictuRAS project is a web-based Image Processing as a Service (SaaS) platform designed for cloud environments. It allows users to perform various image processing operations, ranging from basic tools like resizing and binarization to advanced AI-driven features like OCR and object identification. The project followed an incremental development cycle, starting from an existing base solution and evolving through requirements analysis, extension, and final implementation.",
+    github: "https://github.com/Diogo-Rodriigues/PictuRAS-Image_Processing_Cloud_Platform",
+  },
+  {
+    slug: "airtrail",
+    title: "AirTrail - DevOps  | Ansible - Docker - Kubernetes - GCP",
+    description: "A Zero-touch DevOps solution for AirTrail. Automates GKE cluster provisioning, app deployment with HPA, and Google Cloud Monitoring using Ansible playbooks.",
+    image: "/Images/airtrail.png?height=600&width=800",
+    details:
+      "This project aims to automate the complete lifecycle of the AirTrail web application, a cloud-based flight tracking and history platform. It focuses on enabling fully automated deployment and configuration of the entire environment (including infrastructure, database, application, and monitoring) while minimizing manual effort. The solution is designed to maintain data durability in case of restarts or failures, dynamically scale resources according to traffic demand, and deliver continuous, real-time insights into system performance and operational health.",
+    github: "https://github.com/Diogo-Rodriigues/DevOps-AirTrail",
+  },
+  {
+    slug: "ott",
+    title: "OTT Multimedia Delivery Service  | Java - CORE",
+    description: "A robust Over-the-Top (OTT) delivery service that creates an Application Layer Overlay Network. Features include latency-based dynamic routing, efficient application-layer multicast, and real-time video streaming using RTP over UDP.",
+    image: "/Images/ott.png?height=600&width=800",
+    details:
+      "This project addresses the growing demand for real-time multimedia streaming, which traditional client-server architectures struggle to scale efficiently. It focuses on developing an Application Layer Overlay Network to improve audio and video distribution by optimizing resource usage and reducing network congestion, with the goal of prototyping a system that streams real-time multimedia from a server to multiple clients.",
+    github: "https://github.com/Diogo-Rodriigues/OTT-Multimedia-Delivery-Service",
+  },
   {
     slug: "e-commerce-platform",
     title: "Eletronics store  | React - Python - SQLite",
@@ -12,6 +57,33 @@ const projects = [
     details:
       "My Electronic Store is a full-stack e-commerce application built using React for the frontend and Django for the backend. This project allows users to browse, search, and purchase electronic products seamlessly. It features user authentication, order management, and a responsive design for an optimal user experience.",
     github: "https://github.com/Diogo-Rodriigues/My_Eletronic_Store",
+  },
+  {
+    slug: "asma",
+    title: "Theme Park Multi-Agent System  | Python",
+    description: "A Multi-Agent System (MAS) simulating a theme park environment with intelligent visitors, attractions, and management agents using Python and SPADE.",
+    image: "/Images/asma.png?height=600&width=800",
+    details:
+      "This project implements a Multi-Agent System (MAS) to simulate a theme park environment. It was developed to explore the conception and implementation of intelligent agents capable of perceiving their environment, interpreting information, and making coordinated decisions.",
+    github: "https://github.com/Diogo-Rodriigues/ASMa",
+  },
+  {
+    slug: "gpu-programming",
+    title: "Optimization of a fluid dynamics simulation in 3D | C++ - CUDA",
+    description: "This project was divided into 3 types of optimizations (sequential optimizations, multithreading optimizations with OpenMP and GPU implementation), where we achieved a runtime improvement of 122 times faster than the original version.",
+    image: "/Images/HPC.png?height=600&width=800",
+    details:
+      "This project simulates fluid dynamics using Jos Stam's stable fluid solver in 3D, incorporating dynamic events such as adding density sources and applying forces at specified timesteps. The events are generated using a Python script and read by the C++ simulation. This project was divided into 3 types of optimizations (sequential optimizations, multithreading optimizations with OpenMP and GPU implementation), where we achieved a runtime improvement of 122 times faster than the original version.",
+    github: "https://github.com/Diogo-Rodriigues/Cpp-code-optimization-with-parallelism",
+  },
+  {
+    slug: "CTF",
+    title: "CTF Write-ups",
+    description: "Here are write-ups of some CTFs (Capture the flag) I have conducted where I learned about web vulnerabilities, cryptography and general cybersecurity skills.",
+    image: "/Images/CTF.png?height=600&width=800",
+    details:
+      "Here are write-ups of some CTFs (Capture the flag) I have conducted where I learned about web vulnerabilities, cryptography and general cybersecurity skills.",
+    github: "https://github.com/Diogo-Rodriigues/CTF-Write-ups",
   },
   {
     slug: "personal-website",
@@ -50,24 +122,6 @@ const projects = [
     github: "https://github.com/Diogo-Rodriigues/How-I-learned-SQL-queries",
   },
   {
-    slug: "gpu-programming",
-    title: "Optimization of a fluid dynamics simulation in 3D | C++ - CUDA",
-    description: "This project was divided into 3 types of optimizations (sequential optimizations, multithreading optimizations with OpenMP and GPU implementation), where we achieved a runtime improvement of 122 times faster than the original version.",
-    image: "/Images/HPC.png?height=600&width=800",
-    details:
-      "This project simulates fluid dynamics using Jos Stam's stable fluid solver in 3D, incorporating dynamic events such as adding density sources and applying forces at specified timesteps. The events are generated using a Python script and read by the C++ simulation. This project was divided into 3 types of optimizations (sequential optimizations, multithreading optimizations with OpenMP and GPU implementation), where we achieved a runtime improvement of 122 times faster than the original version.",
-    github: "https://github.com/Diogo-Rodriigues/Cpp-code-optimization-with-parallelism",
-  },
-  {
-    slug: "CTF",
-    title: "CTF Write-ups",
-    description: "Here are write-ups of some CTFs (Capture the flag) I have conducted where I learned about web vulnerabilities, cryptography and general cybersecurity skills.",
-    image: "/Images/CTF.png?height=600&width=800",
-    details:
-      "Here are write-ups of some CTFs (Capture the flag) I have conducted where I learned about web vulnerabilities, cryptography and general cybersecurity skills.",
-    github: "https://github.com/Diogo-Rodriigues/CTF-Write-ups",
-  },
-  {
     slug: "network-scanning",
     title: "Network traffic analysis with TCPDump",
     description: "I simulated that someone is trying to open SSH sessions into my workstation and decided to set up a surveillance script to catch any TCP traffic coming through as SSH and to catch any TCP traffic coming from a specific IP addresse.",
@@ -84,33 +138,6 @@ const projects = [
     details:
       "In this project I want to detect certain TCP/IP network traffic on my server, specifically web traffic and train some network skills!",
     github: "https://github.com/Diogo-Rodriigues/TCP-IP-traffic-with-Wireshark",
-  },
-  {
-    slug: "Master-Slave-Interface",
-    title: "Manchester Based Master-Slave Bus Interface",
-    description: "This project implements a Master-Slave communication system using Manchester encoding for data transmission.",
-    image: "/Images/Bus-Interface.png?height=600&width=800",
-    details:
-      "This project implements a Master-Slave communication system using Manchester encoding for data transmission. The system ensures synchronized communication, correct addressing of sensors, and error detection mechanisms to maintain data integrity.",
-    github: "https://github.com/Diogo-Rodriigues/Manchester-Based-Master-Slave-Bus-Interface-",
-  },
-  {
-    slug: "Instrumentation-Amplifier",
-    title: "Instrumentation Amplifier for measuring biopotentials generated by human body",
-    description: "This practical work aims to study the acquisition and amplification of differential signals using an instrumentation amplifier. The focus is on measuring biopotentials generated by the human body, such as EMG (electromyogram), EOG (electro-oculogram), EEG (electroencephalogram) and ECG (electrocardiogram).",
-    image: "/Images/Instrumentation-Amplifier.png?height=600&width=800",
-    details:
-      "This practical work aims to study the acquisition and amplification of differential signals using an instrumentation amplifier. The focus is on measuring biopotentials generated by the human body, such as EMG (electromyogram), EOG (electro-oculogram), EEG (electroencephalogram) and ECG (electrocardiogram). The practical experiment will focus on ECG measurement as it is one of the easiest signals to observe. For this, three electrodes will be used: two to capture the differential signal from the heart and one as a reference. The instrumentation amplifier will be responsible for amplifying and filtering the signal before processing.",
-    github: "https://github.com/Diogo-Rodriigues/Instrumentation-Amplifier-for-measuring-biopotentials-generated-by-human-body",
-  },
-  {
-    slug: "RLC-circuit",
-    title: "The RLC circuit as a frequency filter series and parallel",
-    description: "This work aimed to analyze the behavior of RLC circuits, in resonance, both in series and in parallel.",
-    image: "/Images/RLC.png?height=600&width=800",
-    details:
-      "This work aimed to analyze the behavior of RLC circuits, in resonance, both in series and in parallel. By assembling bandpass filters and due to the frequency response, the resonance frequency, bandwidth and quality of each circuit were determined. With these results, the equations that allow obtaining the theoretical values ​​were confirmed.",
-    github: "https://github.com/Diogo-Rodriigues/The-RLC-circuit-as-a-frequency-filter-series-and-parallel-",
   },
 ]
 
