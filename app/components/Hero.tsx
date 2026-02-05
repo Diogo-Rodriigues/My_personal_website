@@ -1,4 +1,4 @@
-import { ArrowDown, Code, Shield, Cpu, Brain, Server } from "lucide-react"
+import { ArrowDown, Code, Shield, Cloud, Brain, Server } from "lucide-react"
 
 const Hero = () => {
   return (
@@ -12,12 +12,12 @@ const Hero = () => {
           Diogo Rodrigues Portfolio
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-gray-300">
-          Exploring the frontiers of computing and technological innovation
+          Cybersecurity enthusiast with a separate interest in Intelligent Systems.
         </p>
         <div className="flex justify-center space-x-8 mb-12">
           <div className="flex flex-col items-center">
             <Code className="w-12 h-12 text-green-400 mb-2" />
-            <span className="text-green-400">Software Dev</span>
+            <span className="text-green-400">Software Engineering</span>
           </div>
           <div className="flex flex-col items-center">
             <Shield className="w-12 h-12 text-purple-400 mb-2" />
@@ -28,12 +28,12 @@ const Hero = () => {
             <span className="text-red-400">AI & ML</span>
           </div>
           <div className="flex flex-col items-center">
-            <Server className="w-12 h-12 text-blue-400 mb-2" />
-            <span className="text-blue-400">HPC</span>
+            <Cloud className="w-12 h-12 text-yellow-400 mb-2" />
+            <span className="text-yellow-400">DevOps/Cloud</span>
           </div>
           <div className="flex flex-col items-center">
-            <Cpu className="w-12 h-12 text-yellow-400 mb-2" />
-            <span className="text-yellow-400">Electronics</span>
+            <Server className="w-12 h-12 text-blue-400 mb-2" />
+            <span className="text-blue-400">HPC</span>
           </div>
         </div>
         <a

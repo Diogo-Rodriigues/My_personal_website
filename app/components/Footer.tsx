@@ -22,7 +22,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Diogo Rodrigues. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Diogo Rodrigues. All rights reserved.</p>
         </div>
       </div>
     </footer>
